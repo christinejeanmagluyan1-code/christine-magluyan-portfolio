@@ -344,7 +344,7 @@
           button.textContent = 'Loading video…';
           try {
             const chunks = [];
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 9; i++) {
               const suffix = String(i).padStart(2, '0');
               const response = await fetch(`${id}.mp4.part-${suffix}`);
               if (!response.ok) throw new Error('Could not load video part');
